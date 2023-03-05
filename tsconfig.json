@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"jsx": "preserve",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@/pages/*": ["src/pages/*"],
+			"@/prisma/*": ["prisma/*"],
+			"@/common/*": ["src/common/*"],
+			"@/features/*": ["src/features/*"],
+			"@/constants/*": ["src/constants/*"],
+			"@/data/*": ["src/data/*"],
+			"@/layout/*": ["src/layout/*"],
+			"@/graphql/*": ["src/graphql/*"],
+			"@/lib/*": ["src/lib/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/utils/*": ["utils/*"],
+			"@/styles/*": ["src/styles/*"],
+			"@/types/*": ["src/types/*"],
+			"@/player/*": ["src/features/player/*"],
+			"@/programs/*": ["src/programs/*"],
+			"@/models/*": ["src/models/*"],
+			"@/public/*": ["public/*"]
+		},
+		"incremental": true
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+	"exclude": ["node_modules"]
+}
